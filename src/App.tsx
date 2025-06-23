@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react'
 //import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import BoxBreathingVisual from './components/BoxBreathingVisual';
+import NavbarJF from './components/Navbar';
 import './App.css'
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
   }, [])
 
   return (
+    <>
+    <NavbarJF />
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="zen.webp" />
       <Card.Body>
@@ -34,6 +38,8 @@ function App() {
         <Button variant="primary" onClick={handleNext} >Next Step</Button>
       </Card.Body>
     </Card>
+    <BoxBreathingVisual />
+    </>
   );
 }
 
