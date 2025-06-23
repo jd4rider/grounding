@@ -1,0 +1,42 @@
+[
+  {
+    "step": 1,
+    "label": "See",
+    "count": 5,
+    "prompt": "Name 5 things you can see around you.",
+    "icon": "👀",
+    "color": "blue"
+  },
+  {
+    "step": 2,
+    "label": "Feel",
+    "count": 4,
+    "prompt": "Name 4 things you can feel with your body (e.g. chair, clothes, air).",
+    "icon": "🤲",
+    "color": "green"
+  },
+  {
+    "step": 3,
+    "label": "Hear",
+    "count": 3,
+    "prompt": "Name 3 things you can hear (near or far).",
+    "icon": "👂",
+    "color": "yellow"
+  },
+  {
+    "step": 4,
+    "label": "Smell",
+    "count": 2,
+    "prompt": "Name 2 things you can smell right now.",
+    "icon": "👃",
+    "color": "orange"
+  },
+  {
+    "step": 5,
+    "label": "Taste",
+    "count": 1,
+    "prompt": "Name 1 thing you can taste (or remember the taste of).",
+    "icon": "👅",
+    "color": "red"
+  }
+]
