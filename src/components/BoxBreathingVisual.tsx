@@ -1,11 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
+import DropdownJF from './Dropdown';
 
 const BoxBreathingVisual: React.FC = () => {
-  const phases = ['Hold', 'Inhale', 'Hold', 'Exhale'];
+  
+  const [phases, setPhases] = useState(['Hold', 'Inhale', 'Hold', 'Exhale']);
+  const easyphases = ['Exhale', 'Inhale', 'Exhale', 'Inhale'];
   const phaseDuration = 4000; // 4s per phase
   const [phaseIndex, setPhaseIndex] = useState(0);
   const [position, setPosition] = useState({ top: -16, left: -16 });
+  const [difficulty, setDifficulty] = useState('easy');
+
+  useEffect(() => {
+        // Fetch difficulty setting from localStorage or default to 'easy'
+        const storedDifficulty = localStorage.getItem('difficulty') || 'easy';
+        setDifficulty(storedDifficulty);
+        setPhases(storedDifficulty === 'easy' ? easyphases : ['Hold', 'Inhale', 'Hold', 'Exhale']);
+  }, [difficulty]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -29,6 +40,8 @@ const BoxBreathingVisual: React.FC = () => {
   }, [phaseIndex]);
 
   return (
+    <>
+    <DropdownJF setDifficulty={setDifficulty} />
     <Container
       fluid
       className="d-flex flex-column align-items-center justify-content-center min-vh-100 bg-light text-center"
@@ -61,6 +74,7 @@ const BoxBreathingVisual: React.FC = () => {
 
       <p className="mt-4 text-muted">Follow the circle with your breath.</p>
     </Container>
+    </>
   );
 };
 

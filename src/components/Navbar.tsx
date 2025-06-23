@@ -29,7 +29,22 @@ const NavbarJF = () => (
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href='/'>5-4-3-2-1</Nav.Link>
                   <Nav.Link href='/box-breathing'>Box Breathing</Nav.Link>
-                  <NavDropdown
+                </Nav> 
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+      ))}
+    </>
+);
+
+export default NavbarJF;
+
+
+// 
+/*
+
+<NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
@@ -52,12 +67,5 @@ const NavbarJF = () => (
                   />
                   <Button variant="outline-success">Search</Button>
                 </Form>
-              </Offcanvas.Body>
-            </Navbar.Offcanvas>
-          </Container>
-        </Navbar>
-      ))}
-    </>
-);
 
-export default NavbarJF;
+*/
