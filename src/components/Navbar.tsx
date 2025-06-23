@@ -11,7 +11,7 @@ import Image from 'react-bootstrap/Image';
 const NavbarJF = () => (
     <>
     {[false].map((expand) => (
-        <Navbar key={String(expand)} expand={expand} className="bg-body-tertiary mb-3">
+        <Navbar key={String(expand)} expand={expand} className="bg-body-tertiary mb-3" fixed="top" >
           <Container fluid>
             <Navbar.Brand href="#"><Image src='GroundingLogo.png' width="30" height="30" className="d-inline-block align-top" /></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
