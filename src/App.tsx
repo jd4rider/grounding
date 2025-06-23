@@ -8,8 +8,6 @@ import Button from 'react-bootstrap/Button';
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-  type Step = { label: string; prompt: string; [key: string]: any };
   const [steps, setSteps] = useState<any[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
