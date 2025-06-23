@@ -6,7 +6,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
-import { LinkContainer } from 'react-router-bootstrap'
+//import { LinkContainer } from 'react-router-bootstrap'
 
 const NavbarJF = () => (
     <>
