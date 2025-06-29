@@ -46,6 +46,9 @@ const BoxBreathingVisual: React.FC = () => {
       className="d-flex flex-column align-items-center justify-content-center min-vh-100 bg-light text-center"
     >
     <DropdownJF setDifficulty={setDifficulty} />
+    <br></br>
+    <br></br>
+    <br></br>
       <h2 className="mb-4 text-primary">{phases[phaseIndex]}</h2>
 
       <div
