@@ -41,11 +41,11 @@ const BoxBreathingVisual: React.FC = () => {
 
   return (
     <>
-    <DropdownJF setDifficulty={setDifficulty} />
     <Container
       fluid
       className="d-flex flex-column align-items-center justify-content-center min-vh-100 bg-light text-center"
     >
+    <DropdownJF setDifficulty={setDifficulty} />
       <h2 className="mb-4 text-primary">{phases[phaseIndex]}</h2>
 
       <div
